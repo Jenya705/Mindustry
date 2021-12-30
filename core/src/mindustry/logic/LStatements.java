@@ -29,7 +29,7 @@ public class LStatements{
 
         @Override
         public void build(Table table){
-            table.area(comment, Styles.nodeArea, v -> comment = v).growX().height(90f).padLeft(2).padRight(6).color(table.color);
+            table.area(comment, Styles.nodeArea, v -> comment = v).growX().maxTextLength(LAssembler.maxCommentLength).height(90f).padLeft(2).padRight(6).color(table.color);
         }
 
         @Override
